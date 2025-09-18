@@ -1,6 +1,12 @@
-const { GraphQLClient } = require('graphql-request');
 const fs = require('fs');
 const path = require('path');
+
+// Dynamic import for ES module
+let GraphQLClient;
+(async () => {
+  const { GraphQLClient: GQLClient } = await import('graphql-request');
+  GraphQLClient = GQLClient;
+})();
 
 class JobberAPIService {
   constructor() {
@@ -10,9 +16,9 @@ class JobberAPIService {
     this.redirectUri = process.env.JOBBER_REDIRECT_URI;
     this.tokenStoragePath = process.env.TOKEN_STORAGE_PATH || './tokens.json';
     this.graphqlVersion = process.env.JOBBER_GRAPHQL_VERSION || '2025-01-20';
-    
+
     this.debug = process.env.DEBUG_GRAPHQL === 'true';
-    
+
     // Initialize GraphQL client (will be updated with auth token)
     this.client = null;
   }
@@ -24,9 +30,14 @@ class JobberAPIService {
   }
 
   // Initialize GraphQL client with access token
-  initializeClient(accessToken) {
+  async initializeClient(accessToken) {
     if (!accessToken) {
       throw new Error('Access token required to initialize Jobber API client');
+    }
+
+    // Wait for GraphQLClient to be available
+    while (!GraphQLClient) {
+      await new Promise(resolve => setTimeout(resolve, 10));
     }
 
     this.client = new GraphQLClient(this.apiUrl, {
@@ -123,7 +134,7 @@ class JobberAPIService {
       this.saveTokens(tokens);
       
       // Initialize GraphQL client with new access token
-      this.initializeClient(tokens.access_token);
+      await this.initializeClient(tokens.access_token);
       
       return tokens;
     } catch (error) {
@@ -167,7 +178,7 @@ class JobberAPIService {
       this.saveTokens(tokens);
       
       // Update GraphQL client with new access token
-      this.initializeClient(tokens.access_token);
+      await this.initializeClient(tokens.access_token);
       
       return tokens;
     } catch (error) {
@@ -208,7 +219,7 @@ class JobberAPIService {
     }
 
     // Initialize client with existing token
-    this.initializeClient(storedTokens.access_token);
+    await this.initializeClient(storedTokens.access_token);
     return storedTokens;
   }
 
@@ -238,8 +249,11 @@ class JobberAPIService {
   // Direct query without token management (for testing fresh tokens)
   async queryDirect(graphqlQuery, accessToken, variables = {}) {
     try {
-      const { GraphQLClient } = require('graphql-request');
-      
+      // Wait for GraphQLClient to be available
+      while (!GraphQLClient) {
+        await new Promise(resolve => setTimeout(resolve, 10));
+      }
+
       const directClient = new GraphQLClient('https://api.getjobber.com/api/graphql', {
         headers: {
           'Authorization': `Bearer ${accessToken}`,
