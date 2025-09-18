@@ -228,8 +228,8 @@ app.get('/', (req, res) => {
   res.status(503).json({ error: 'Frontend build not found. Run frontend build.', timestamp: new Date().toISOString() });
 });
 
-// Catch-all for client-side routing (excluding /api and auth paths)
-app.get(/^\/(?!api|auth|api\/)/, (req, res) => {
+// Catch-all for client-side routing (excluding /api paths and auth callback)
+app.get(/^\/(?!api|auth\/callback|api\/)/, (req, res) => {
   const indexPath = path.join(frontendPath, 'index.html');
   if (fs.existsSync(indexPath)) return res.sendFile(indexPath);
   res.status(404).json({ error: 'Frontend build not found.' });
@@ -551,20 +551,22 @@ app.get('/auth', (req, res) => {
   }
 });
 
-// OAuth callback endpoint
+// OAuth callback endpoint - DISABLED: Frontend handles OAuth callback
+// Uncomment below if backend should handle OAuth callback directly
+/*
 app.get('/auth/callback', async (req, res) => {
   const { code, state } = req.query;
   console.log('[SERVER] OAuth callback:', req.query);
-  
+
   if (!code) {
     return res.status(400).send('Missing authorization code');
   }
-  
+
   try {
     // Exchange code for tokens directly in the callback
     const tokenData = await jobberAPI.exchangeCodeForToken(code);
     console.log('[SERVER] Token exchange successful');
-    
+
     // Send a simple success page instead of redirecting
     res.send(`
       <html>
@@ -592,6 +594,7 @@ app.get('/auth/callback', async (req, res) => {
     `);
   }
 });
+*/
 
 // Token exchange endpoint
 app.post('/auth/token', async (req, res) => {
