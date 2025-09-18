@@ -1,0 +1,16 @@
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+C:/Ruby31-x64/bin/ruby.exe -I C:/Ruby31-x64/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-ekscvs sitelibdir\=./.gem.20250911-6372-ekscvs clean
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-ekscvs sitelibdir\=./.gem.20250911-6372-ekscvs
+generating websocket_mask-x64-mingw-ucrt.def
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-ekscvs sitelibdir\=./.gem.20250911-6372-ekscvs install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20250911-6372-ekscvs

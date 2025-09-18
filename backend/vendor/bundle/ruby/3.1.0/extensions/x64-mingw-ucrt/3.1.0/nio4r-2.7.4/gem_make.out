@@ -1,0 +1,14 @@
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/nio4r-2.7.4/ext/nio4r
+C:/Ruby31-x64/bin/ruby.exe -I C:/Ruby31-x64/lib/ruby/3.1.0 extconf.rb
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/nio4r-2.7.4/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-pb77lb sitelibdir\=./.gem.20250911-6372-pb77lb clean
+make: *** No rule to make target 'clean'.  Stop.
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/nio4r-2.7.4/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-pb77lb sitelibdir\=./.gem.20250911-6372-pb77lb
+make: Nothing to be done for 'all'.
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/nio4r-2.7.4/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-pb77lb sitelibdir\=./.gem.20250911-6372-pb77lb install
+make: Nothing to be done for 'install'.

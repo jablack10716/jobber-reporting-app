@@ -1,0 +1,721 @@
+{
+  "window": {
+    "start": "2025-08-01",
+    "end": "2025-09-16"
+  },
+  "excelMeta": {
+    "sheetName": "Invoices_Report_2025-09-16",
+    "invoiceCol": "Invoice #",
+    "hoursCol": "Invoiced Hours (Excluding Job Details)",
+    "plumberCol": "Lead Plumber",
+    "header": [
+      "Invoice #",
+      "Issued date",
+      "Visits assigned to",
+      "Lead Plumber",
+      "Lead Plumber 2",
+      "Line items",
+      "Description",
+      "Invoiced Hours (Excluding Job Details)"
+    ]
+  },
+  "count": 18,
+  "mismatches": [
+    {
+      "invoiceNumber": "81417",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "leadPlumber": "Heath",
+      "leadPlumber2": "",
+      "lead1Hours": 1.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Heath' hours=1 vs expected=1.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          1
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Residential",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "Installed new kitchen sink faucet and strainer basket provided by customer",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81398",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "leadPlumber": "Wes",
+      "leadPlumber2": "",
+      "lead1Hours": 1.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Wes' hours=1 vs expected=1.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          1
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Residential",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "remove and replace flush valve in toilet",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81388",
+      "excelHours": 0,
+      "computedHours": 0.5,
+      "delta": 0.5,
+      "leadPlumber": "Lorin",
+      "leadPlumber2": "",
+      "lead1Hours": 0.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Lorin' hours=0 vs expected=0.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          0
+        ]
+      },
+      "items": [
+        {
+          "description": "Reattched tubular pipe underneath kitchen sink",
+          "productName": "Plumbing - Residential",
+          "quantity": 0.5,
+          "adjustedQuantity": 0.5,
+          "included": true,
+          "exclusionReason": ""
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81376",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "leadPlumber": "Lorin",
+      "leadPlumber2": "",
+      "lead1Hours": 1.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Lorin' hours=1 vs expected=1.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          1
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Residential",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "Swapped kitchen sink drain from s trap, to p trap with pro vent",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81374",
+      "excelHours": 0,
+      "computedHours": 0.5,
+      "delta": 0.5,
+      "leadPlumber": "Heath",
+      "leadPlumber2": "",
+      "lead1Hours": 0.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Heath' hours=0 vs expected=0.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          0
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Residential",
+          "quantity": 0.5,
+          "adjustedQuantity": 0.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "Plunged the drain line to remove blockage and reset toilet.",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81367",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "leadPlumber": "Lorin",
+      "leadPlumber2": "",
+      "lead1Hours": 1.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Lorin' hours=1 vs expected=1.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          1
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Residential",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "Ran small drain machine in kitchen sink to clear clog. Replaced leaking kitchen cold water shut off.",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        },
+        {
+          "description": "",
+          "productName": "Credit Card Service Fee",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Credit Card Fee"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81361",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "leadPlumber": "Wes",
+      "leadPlumber2": "",
+      "lead1Hours": 1.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Wes' hours=1 vs expected=1.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          1
+        ]
+      },
+      "items": [
+        {
+          "description": "Leak checked all water lines in utility room found no leak determined to come from t&p valve turned down water heater temperature to keep from happening again",
+          "productName": "Plumbing - Commercial",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81360",
+      "excelHours": 2,
+      "computedHours": 2.5,
+      "delta": 0.5,
+      "leadPlumber": "Elijah",
+      "leadPlumber2": "",
+      "lead1Hours": 2.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Elijah' hours=2 vs expected=2.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          2
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Residential",
+          "quantity": 2.5,
+          "adjustedQuantity": 2.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "Cut out and replace shower valve",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81359",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "leadPlumber": "Elijah",
+      "leadPlumber2": "",
+      "lead1Hours": 1.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Elijah' hours=1 vs expected=1.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          1
+        ]
+      },
+      "items": [
+        {
+          "description": "successfuly ran main drain machine towards house and towards city main blocked with roots both ways",
+          "productName": "Plumbing - Commercial",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81355",
+      "excelHours": 0,
+      "computedHours": 0.5,
+      "delta": 0.5,
+      "leadPlumber": "Lorin",
+      "leadPlumber2": "",
+      "lead1Hours": 0.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Lorin' hours=0 vs expected=0.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          0
+        ]
+      },
+      "items": [
+        {
+          "description": "Cleared water heater air intake of dust and debris, relit water heater",
+          "productName": "Plumbing - Residential",
+          "quantity": 0.5,
+          "adjustedQuantity": 0.5,
+          "included": true,
+          "exclusionReason": ""
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81352",
+      "excelHours": 2,
+      "computedHours": 2.5,
+      "delta": 0.5,
+      "leadPlumber": "Elijah",
+      "leadPlumber2": "",
+      "lead1Hours": 2.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Elijah' hours=2 vs expected=2.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          2
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Residential",
+          "quantity": 2.5,
+          "adjustedQuantity": 2.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "changed out customer provided shower valve and trim kit because trim kit would not work",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81350",
+      "excelHours": 2,
+      "computedHours": 2.5,
+      "delta": 0.5,
+      "leadPlumber": "Wes",
+      "leadPlumber2": "",
+      "lead1Hours": 2.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Wes' hours=2 vs expected=2.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          2
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Residential",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "cut out barbed fitting in crawl and replaced with new",
+          "productName": "Plumbing - Residential",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "",
+          "productName": "Credit Card Service Fee",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Credit Card Fee"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81349",
+      "excelHours": 2,
+      "computedHours": 2.5,
+      "delta": 0.5,
+      "leadPlumber": "Wes",
+      "leadPlumber2": "",
+      "lead1Hours": 2.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Wes' hours=2 vs expected=2.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          2
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Commercial",
+          "quantity": 2.5,
+          "adjustedQuantity": 2.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "Ran drain and waterlines for tub. Also set shower valve",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81348",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "leadPlumber": "Elijah",
+      "leadPlumber2": "",
+      "lead1Hours": 1.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Elijah' hours=1 vs expected=1.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          1
+        ]
+      },
+      "items": [
+        {
+          "description": "Pulled and reset toilet ran camera and seen nothing in drain line all the way out to septic ran water in all bathrooms and got no gurgle we reset the toilet and it gurgled immediately we came to the conclusion it’s a vent issue tried to run small machine through vent with no success",
+          "productName": "Plumbing - Residential",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81340",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "leadPlumber": "Wes",
+      "leadPlumber2": "",
+      "lead1Hours": 1.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Wes' hours=1 vs expected=1.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          1
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Commercial",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "Removed toilet and capped waterlines for demo of bathroom. Disconnected lavatory sink waterlines and drain. Capped waterlines",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81339",
+      "excelHours": 3,
+      "computedHours": 3.5,
+      "delta": 0.5,
+      "leadPlumber": "Heath",
+      "leadPlumber2": "",
+      "lead1Hours": 3.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Heath' hours=3 vs expected=3.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          3
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Residential",
+          "quantity": 3.5,
+          "adjustedQuantity": 3.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "Flooded basement. Disconnected sump pump and battery back up system due to them not working. Installed 1/3 horse sump pump into sump pit to drain basement and surrounding perimeter drains. Sump pump was installed so Stanley Steemer could remove water from basement.",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81338",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "leadPlumber": "Heath",
+      "leadPlumber2": "",
+      "lead1Hours": 1.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Heath' hours=1 vs expected=1.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          1
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Residential",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "Repaired broken 2 inch washing machine drain",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    },
+    {
+      "invoiceNumber": "81328",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "leadPlumber": "Elijah",
+      "leadPlumber2": "",
+      "lead1Hours": 1.5,
+      "lead2Hours": 0,
+      "comparisonBasis": "per-row",
+      "details": "[row plumber='Elijah' hours=1 vs expected=1.5 (total) delta=0.5]",
+      "excelSelection": {
+        "invoiceCol": "Invoice #",
+        "hoursCol": "Invoiced Hours (Excluding Job Details)",
+        "plumberCol": "Lead Plumber"
+      },
+      "excelCandidates": {
+        "Invoiced Hours (Excluding Job Details)": [
+          1
+        ]
+      },
+      "items": [
+        {
+          "description": "",
+          "productName": "Plumbing - Commercial",
+          "quantity": 1.5,
+          "adjustedQuantity": 1.5,
+          "included": true,
+          "exclusionReason": ""
+        },
+        {
+          "description": "Installed 2 new straight stops new supply lines brand new faucet and pop up had to re run drain to be code compliant",
+          "productName": "Job Details",
+          "quantity": 1,
+          "adjustedQuantity": 1,
+          "included": false,
+          "exclusionReason": "Job Details"
+        }
+      ]
+    }
+  ]
+}

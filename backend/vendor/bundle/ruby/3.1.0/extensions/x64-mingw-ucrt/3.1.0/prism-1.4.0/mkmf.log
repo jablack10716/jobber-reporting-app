@@ -1,0 +1,86 @@
+find_header: checking for prism.h in C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/prism-1.4.0/include... -------------------- yes
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Ruby31-x64\bin;C:\Ruby31-x64\bin;C:\Ruby34-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Ruby32-x64\bin;C:\Ruby30-x64\bin;C:\Users\jabla\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jabla\AppData\Local\Programs\Python\Python313\;C:\Users\jabla\AppData\Local\Programs\Python\Launcher\;C:\Users\jabla\AppData\Local\Microsoft\WindowsApps;C:\Users\jabla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jabla\AppData\Roaming\npm;c:\Users\jabla\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -o conftest.exe -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby31-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Ruby31-x64\bin;C:\Ruby31-x64\bin;C:\Ruby34-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Ruby32-x64\bin;C:\Ruby30-x64\bin;C:\Users\jabla\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jabla\AppData\Local\Programs\Python\Python313\;C:\Users\jabla\AppData\Local\Programs\Python\Launcher\;C:\Users\jabla\AppData\Local\Microsoft\WindowsApps;C:\Users\jabla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jabla\AppData\Roaming\npm;c:\Users\jabla\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: prism.h: No such file or directory
+    5 | #include <prism.h>
+      |          ^~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <prism.h>
+/* end */
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Ruby31-x64\bin;C:\Ruby31-x64\bin;C:\Ruby34-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Ruby32-x64\bin;C:\Ruby30-x64\bin;C:\Users\jabla\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jabla\AppData\Local\Programs\Python\Python313\;C:\Users\jabla\AppData\Local\Programs\Python\Launcher\;C:\Users\jabla\AppData\Local\Microsoft\WindowsApps;C:\Users\jabla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jabla\AppData\Roaming\npm;c:\Users\jabla\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64 -IC:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/prism-1.4.0/include -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <prism.h>
+/* end */
+
+--------------------
+
+find_header: checking for prism/extension.h in C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/prism-1.4.0/ext... -------------------- yes
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Ruby31-x64\bin;C:\Ruby31-x64\bin;C:\Ruby34-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Ruby32-x64\bin;C:\Ruby30-x64\bin;C:\Users\jabla\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jabla\AppData\Local\Programs\Python\Python313\;C:\Users\jabla\AppData\Local\Programs\Python\Launcher\;C:\Users\jabla\AppData\Local\Microsoft\WindowsApps;C:\Users\jabla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jabla\AppData\Roaming\npm;c:\Users\jabla\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -IC:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/prism-1.4.0/include -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: prism/extension.h: No such file or directory
+    5 | #include <prism/extension.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <prism/extension.h>
+/* end */
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Ruby31-x64\bin;C:\Ruby31-x64\bin;C:\Ruby34-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Ruby32-x64\bin;C:\Ruby30-x64\bin;C:\Users\jabla\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jabla\AppData\Local\Programs\Python\Python313\;C:\Users\jabla\AppData\Local\Programs\Python\Launcher\;C:\Users\jabla\AppData\Local\Microsoft\WindowsApps;C:\Users\jabla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jabla\AppData\Roaming\npm;c:\Users\jabla\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -IC:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/prism-1.4.0/include -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64 -IC:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/prism-1.4.0/ext -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <prism/extension.h>
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -fvisibility=hidden is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Ruby31-x64\bin;C:\Ruby31-x64\bin;C:\Ruby34-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Ruby32-x64\bin;C:\Ruby30-x64\bin;C:\Users\jabla\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jabla\AppData\Local\Programs\Python\Python313\;C:\Users\jabla\AppData\Local\Programs\Python\Launcher\;C:\Users\jabla\AppData\Local\Microsoft\WindowsApps;C:\Users\jabla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jabla\AppData\Roaming\npm;c:\Users\jabla\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -IC:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/prism-1.4.0/include -IC:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/prism-1.4.0/ext -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64 -fvisibility=hidden -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+

@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    "**/.server.lock": true,
+    "backend/scripts/**": false,
+    "backend/server-error.log": true
+  },
+  "search.exclude": {
+    "backend/scripts/**": true,
+    "backend/build/**": true,
+    "backend/node_modules/**": true
+  }
+}

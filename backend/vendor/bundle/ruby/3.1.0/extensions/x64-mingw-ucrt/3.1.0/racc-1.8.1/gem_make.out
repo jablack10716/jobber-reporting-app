@@ -1,0 +1,16 @@
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+C:/Ruby31-x64/bin/ruby.exe -I C:/Ruby31-x64/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-c2kruo sitelibdir\=./.gem.20250911-6372-c2kruo clean
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-c2kruo sitelibdir\=./.gem.20250911-6372-c2kruo
+generating cparse-x64-mingw-ucrt.def
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-c2kruo sitelibdir\=./.gem.20250911-6372-c2kruo install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250911-6372-c2kruo/racc

@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d8260e48.css",
+    "main.js": "/static/js/main.26414ead.js",
+    "static/js/787.30e37ed3.chunk.js": "/static/js/787.30e37ed3.chunk.js",
+    "static/media/jobber_logo.svg": "/static/media/jobber_logo.c681114a28bbf0df905aa8d316b5e474.svg",
+    "static/media/app-logo-placeholder.svg": "/static/media/app-logo-placeholder.7f8f574ee0f14171b566f95696b7a656.svg",
+    "index.html": "/index.html",
+    "main.d8260e48.css.map": "/static/css/main.d8260e48.css.map",
+    "main.26414ead.js.map": "/static/js/main.26414ead.js.map",
+    "787.30e37ed3.chunk.js.map": "/static/js/787.30e37ed3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8260e48.css",
+    "static/js/main.26414ead.js"
+  ]
+}

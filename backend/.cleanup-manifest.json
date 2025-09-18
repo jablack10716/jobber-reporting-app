@@ -1,0 +1,185 @@
+{
+  "appliedAt": "2025-09-17T17:12:52.518Z",
+  "moves": [
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\debug-cache-fields.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\debug\\debug-cache-fields.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\debug-env.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\debug\\debug-env.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\debug-invoice-fields.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\debug\\debug-invoice-fields.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\debug-names.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\debug\\debug-names.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\debug-timesheet-august.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\debug\\debug-timesheet-august.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\debug-wes-august.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\debug\\debug-wes-august.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\debug-wes-invoice-validation.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\debug\\debug-wes-invoice-validation.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\demo-endpoint.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\demo\\demo-endpoint.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\demo-rest-api.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\demo\\demo-rest-api.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\export-august-invoiced-hours.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\exports\\export-august-invoiced-hours.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\export-august-wes-invoiced-hours.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\exports\\export-august-wes-invoiced-hours.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\final-verification.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tools\\final-verification.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\generate-oauth-test-url.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\oauth\\generate-oauth-test-url.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\generate-oauth-url-separate.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\oauth\\generate-oauth-url-separate.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\generate-oauth-url.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\oauth\\generate-oauth-url.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\mini-server.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\servers\\mini-server.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\oauth-server.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\oauth\\oauth-server.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\oauth-test-server.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\oauth\\oauth-test-server.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\refresh-and-debug.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tools\\refresh-and-debug.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\report-mismatches.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tools\\report-mismatches.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\server-clean.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\servers\\server-clean.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\server-simple.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\servers\\server-simple.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\server-working.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\servers\\server-working.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\simple-server.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\servers\\simple-server.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-api-simulation.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-api-simulation.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-august-fix.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-august-fix.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-direct-api.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-direct-api.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-fetch-debug.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-fetch-debug.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-graphql-query.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-graphql-query.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-invoice-date-fields-simple.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-invoice-date-fields-simple.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-invoice-date-fields.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-invoice-date-fields.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-job-schema.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-job-schema.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-lifirst-fix.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-lifirst-fix.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-manual-refresh.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-manual-refresh.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-plumber-data.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-plumber-data.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-real-api.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-real-api.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-real-data.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-real-data.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-real-simple.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-real-simple.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-schema-fields.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-schema-fields.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-sent-at.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-sent-at.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-server.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-server.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-simple.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-simple.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-token-refresh.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-token-refresh.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\test-validation.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\tests\\test-validation.js"
+    },
+    {
+      "from": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\validate-invoices.js",
+      "to": "C:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend\\scripts\\exports\\validate-invoices.js"
+    }
+  ]
+}

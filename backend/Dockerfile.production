@@ -1,0 +1,82 @@
+# Production Dockerfile for Jobber Reporting App Backend
+FROM node:18-alpine AS base
+
+# Install dumb-init for proper signal handling
+RUN apk add --no-cache dumb-init curl
+
+# Set working directory
+WORKDIR /app
+
+# Create non-root user
+RUN addgroup -g 1001 -S nodejs && \
+    adduser -S nodejs -u 1001
+
+# =============================================================================
+# DEPENDENCY STAGE
+# =============================================================================
+FROM base AS deps
+
+# Copy package files
+COPY backend/package*.json ./
+
+# Install dependencies
+RUN npm ci --only=production && \
+    npm cache clean --force
+
+# =============================================================================
+# BUILD STAGE
+# =============================================================================
+FROM base AS builder
+
+# Copy package files
+COPY backend/package*.json ./
+
+# Install all dependencies (including dev dependencies for building)
+RUN npm ci && \
+    npm cache clean --force
+
+# Copy source code
+COPY backend/ ./
+
+# Build the application (if needed)
+RUN npm run build 2>/dev/null || echo "No build script found"
+
+# Remove development dependencies
+RUN npm prune --production
+
+# =============================================================================
+# PRODUCTION STAGE
+# =============================================================================
+FROM base AS production
+
+# Copy package files
+COPY backend/package*.json ./
+
+# Copy dependencies from deps stage
+COPY --from=deps /app/node_modules ./node_modules
+
+# Copy built application
+COPY --from=builder /app ./
+
+# Copy frontend build if it exists
+COPY --from=builder /app/build ./build
+
+# Create necessary directories
+RUN mkdir -p /app/data /app/logs /app/backups && \
+    chown -R nodejs:nodejs /app
+
+# Switch to non-root user
+USER nodejs
+
+# Expose port
+EXPOSE 3000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:3000/api/health || exit 1
+
+# Use dumb-init to handle signals properly
+ENTRYPOINT ["dumb-init", "--"]
+
+# Start the application
+CMD ["node", "server.js"]

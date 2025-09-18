@@ -1,0 +1,253 @@
+.combined-report {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.back-link {
+  color: #445D6E;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #e9ecef;
+  text-decoration: none;
+}
+
+.report-header h1 {
+  color: #445D6E;
+  font-size: 2rem;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.export-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.export-button:hover {
+  background-color: #218838;
+}
+
+.chart-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+.chart-container h3 {
+  color: #445D6E;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.custom-tooltip {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.tooltip-label {
+  font-weight: bold;
+  color: #445D6E;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+.tooltip-entry {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.tooltip-entry:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.tooltip-plumber {
+  font-weight: 600;
+  color: #445D6E;
+  margin-bottom: 0.25rem;
+}
+
+.tooltip-entry p {
+  margin: 0.1rem 0;
+  font-size: 0.9rem;
+}
+
+.profit-positive {
+  color: #28a745 !important;
+  font-weight: 600;
+}
+
+.profit-negative {
+  color: #dc3545 !important;
+  font-weight: 600;
+}
+
+.summary-table-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+.summary-table-container h3 {
+  color: #445D6E;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.summary-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #445D6E;
+  border-top: 1px solid #dee2e6;
+}
+
+.summary-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.plumber-name {
+  font-weight: 600;
+  color: #445D6E;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  text-align: center;
+}
+
+.error h2 {
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.error p {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.retry-button {
+  background-color: #445D6E;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.retry-button:hover {
+  background-color: #354a57;
+}
+
+.no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .combined-report {
+    padding: 1rem;
+  }
+  
+  .report-header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  
+  .report-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .chart-container,
+  .summary-table-container {
+    padding: 1rem;
+  }
+  
+  .summary-table {
+    font-size: 0.85rem;
+  }
+  
+  .summary-table th,
+  .summary-table td {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .summary-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

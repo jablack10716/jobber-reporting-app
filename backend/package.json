@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "[![CircleCI](https://circleci.com/gh/GetJobber/Jobber-AppTemplate-RailsAPI/tree/main.svg?style=svg&circle-token=6b380bcc34004fc33fd7d0a8041ef80e20fe522d)](https://circleci.com/gh/GetJobber/Jobber-AppTemplate-RailsAPI/tree/main)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "cd ../frontend && npm install && npm run build && cd ../backend && cp -r ../frontend/build ./build",
+    "purge:wes:aug2025": "node purge-rebuild-slices.js --plumber Wes --year 2025 --month 08 --regen --refresh",
+    "reconcile:wes:aug2025": "node validate-wes-aug-2025.js --plumber Wes --year 2025 --month 08 --refresh",
+    "purge:all:2025": "node purge-rebuild-slices.js --all --year 2025 --regen --refresh",
+    "debug:invoice:wes:aug2025": "powershell -NoLogo -NoProfile -Command \"Invoke-WebRequest -UseBasicParsing 'http://localhost:3000/api/debug/invoice-items?plumber=Wes&month=2025-08' | Select-Object -ExpandProperty Content\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GetJobber/Jobber-AppTemplate-RailsAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GetJobber/Jobber-AppTemplate-RailsAPI/issues"
+  },
+  "homepage": "https://github.com/GetJobber/Jobber-AppTemplate-RailsAPI#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "graphql": "^16.11.0",
+    "graphql-request": "^7.2.0",
+    "node-fetch": "^2.7.0",
+    "xlsx": "^0.18.5"
+  }
+}

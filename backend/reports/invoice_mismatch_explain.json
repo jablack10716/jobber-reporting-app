@@ -1,0 +1,515 @@
+{
+  "window": {
+    "start": "2025-08-01",
+    "end": "2025-09-16"
+  },
+  "excelMeta": {
+    "sheetName": "Invoices_Report_2025-09-16",
+    "invoiceCol": "Invoice #",
+    "hoursCol": "Invoiced Hours (Excluding Job Details)",
+    "plumberCol": "Lead Plumber",
+    "header": [
+      "Invoice #",
+      "Issued date",
+      "Visits assigned to",
+      "Lead Plumber",
+      "Lead Plumber 2",
+      "Line items",
+      "Description",
+      "Invoiced Hours (Excluding Job Details)"
+    ]
+  },
+  "count": 18,
+  "reasons": {
+    "total": 18,
+    "hasTwoLeads": 0,
+    "hasJobDetailsExcluded": 12,
+    "hasCreditCardFeeExcluded": 2,
+    "hasExcavationMultiplier": 0,
+    "roundedHalfDown": 18
+  },
+  "entries": [
+    {
+      "invoiceNumber": "81417",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 1
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=1",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=1",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81398",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 1
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=1",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=1",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81388",
+      "excelHours": 0,
+      "computedHours": 0.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": false,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 0
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=0",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=0",
+      "notes": [
+        "excel_rounded_down_half_hour"
+      ]
+    },
+    {
+      "invoiceNumber": "81376",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 1
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=1",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=1",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81374",
+      "excelHours": 0,
+      "computedHours": 0.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 0
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=0",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=0",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81367",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": true,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 1
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=1",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=1",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded",
+        "cc_fee_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81361",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": false,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 1
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=1",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=1",
+      "notes": [
+        "excel_rounded_down_half_hour"
+      ]
+    },
+    {
+      "invoiceNumber": "81360",
+      "excelHours": 2,
+      "computedHours": 2.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 2
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=2",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=2",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81359",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": false,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 1
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=1",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=1",
+      "notes": [
+        "excel_rounded_down_half_hour"
+      ]
+    },
+    {
+      "invoiceNumber": "81355",
+      "excelHours": 0,
+      "computedHours": 0.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": false,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 0
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=0",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=0",
+      "notes": [
+        "excel_rounded_down_half_hour"
+      ]
+    },
+    {
+      "invoiceNumber": "81352",
+      "excelHours": 2,
+      "computedHours": 2.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 2
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=2",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=2",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81350",
+      "excelHours": 2,
+      "computedHours": 2.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": false,
+      "hasCreditCardFeeExcluded": true,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 2
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=2",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=2",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "cc_fee_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81349",
+      "excelHours": 2,
+      "computedHours": 2.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 2
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=2",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=2",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81348",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": false,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 1
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=1",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=1",
+      "notes": [
+        "excel_rounded_down_half_hour"
+      ]
+    },
+    {
+      "invoiceNumber": "81340",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 1
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=1",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=1",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81339",
+      "excelHours": 3,
+      "computedHours": 3.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 3
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=3",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=3",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81338",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 1
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=1",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=1",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    },
+    {
+      "invoiceNumber": "81328",
+      "excelHours": 1,
+      "computedHours": 1.5,
+      "delta": 0.5,
+      "hasTwoLeads": false,
+      "hasJobDetailsExcluded": true,
+      "hasCreditCardFeeExcluded": false,
+      "hasExcavationMultiplier": false,
+      "computedFractional": "0.5",
+      "roundedHalfDown": true,
+      "excelRowCount": 1,
+      "excelHoursCol": "Invoiced Hours (Excluding Job Details)",
+      "excelPlumberCol": "Lead Plumber",
+      "candidateCols": [
+        "Invoiced Hours (Excluding Job Details)"
+      ],
+      "candidateSums": {
+        "Invoiced Hours (Excluding Job Details)": 1
+      },
+      "closestToComputed": "Invoiced Hours (Excluding Job Details)=1",
+      "closestToExcel": "Invoiced Hours (Excluding Job Details)=1",
+      "notes": [
+        "excel_rounded_down_half_hour",
+        "job_details_excluded"
+      ]
+    }
+  ]
+}

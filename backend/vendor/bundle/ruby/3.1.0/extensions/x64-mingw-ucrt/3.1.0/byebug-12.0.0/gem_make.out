@@ -1,0 +1,20 @@
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/byebug-12.0.0/ext/byebug
+C:/Ruby31-x64/bin/ruby.exe -I C:/Ruby31-x64/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/byebug-12.0.0/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-ij27gy sitelibdir\=./.gem.20250911-6372-ij27gy clean
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/byebug-12.0.0/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-ij27gy sitelibdir\=./.gem.20250911-6372-ij27gy
+generating byebug-x64-mingw-ucrt.def
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: C:/Users/jabla/OneDrive/Documents/Advanced/Python/jobber-reporting-app/backend/vendor/bundle/ruby/3.1.0/gems/byebug-12.0.0/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20250911-6372-ij27gy sitelibdir\=./.gem.20250911-6372-ij27gy install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20250911-6372-ij27gy/byebug
