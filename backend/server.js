@@ -228,8 +228,8 @@ app.get('/', (req, res) => {
   res.status(503).json({ error: 'Frontend build not found. Run frontend build.', timestamp: new Date().toISOString() });
 });
 
-// Catch-all for client-side routing (excluding /api paths and auth callback)
-app.get(/^\/(?!api|auth\/callback|api\/)/, (req, res) => {
+// Catch-all for client-side routing (exclude only /api so React Router can handle /auth and others)
+app.get(/^\/(?!api(\/|$))/, (req, res) => {
   const indexPath = path.join(frontendPath, 'index.html');
   if (fs.existsSync(indexPath)) return res.sendFile(indexPath);
   res.status(404).json({ error: 'Frontend build not found.' });
@@ -551,50 +551,7 @@ app.get('/auth', (req, res) => {
   }
 });
 
-// OAuth callback endpoint - DISABLED: Frontend handles OAuth callback
-// Uncomment below if backend should handle OAuth callback directly
-/*
-app.get('/auth/callback', async (req, res) => {
-  const { code, state } = req.query;
-  console.log('[SERVER] OAuth callback:', req.query);
-
-  if (!code) {
-    return res.status(400).send('Missing authorization code');
-  }
-
-  try {
-    // Exchange code for tokens directly in the callback
-    const tokenData = await jobberAPI.exchangeCodeForToken(code);
-    console.log('[SERVER] Token exchange successful');
-
-    // Send a simple success page instead of redirecting
-    res.send(`
-      <html>
-        <head><title>OAuth Success</title></head>
-        <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 100px auto; text-align: center;">
-          <h1 style="color: green;">✅ Authentication Successful!</h1>
-          <p>You have successfully authenticated with Jobber.</p>
-          <p>Your tokens have been saved and you can now access real data.</p>
-          <p><a href="/" style="background: #007cba; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Go to Dashboard</a></p>
-        </body>
-      </html>
-    `);
-  } catch (error) {
-    console.error('[SERVER] Token exchange failed:', error);
-    res.send(`
-      <html>
-        <head><title>OAuth Error</title></head>
-        <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 100px auto; text-align: center;">
-          <h1 style="color: red;">❌ Authentication Failed</h1>
-          <p>There was an error during authentication:</p>
-          <p style="background: #f5f5f5; padding: 10px; border-radius: 5px;">${error.message}</p>
-          <p><a href="/auth" style="background: #007cba; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Try Again</a></p>
-        </body>
-      </html>
-    `);
-  }
-});
-*/
+// Frontend handles /auth and /auth/callback; backend only exposes /api/* and helper endpoints
 
 // Token exchange endpoint
 app.post('/auth/token', async (req, res) => {
