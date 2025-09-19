@@ -16,14 +16,22 @@ const Auth = () => {
   const [authenticating, setAuthenticating] = useState(false);
 
   useEffect(() => {
+    console.log('🔍 [Auth] Component loaded, checking state...', {
+      hasCode: !!code,
+      userAccountName: user.accountName,
+      currentURL: window.location.href
+    });
+
     // If user is already authenticated, redirect to home immediately
     if (user.accountName) {
+      console.log('✅ [Auth] User already authenticated, redirecting to home');
       navigate('/home', { replace: true });
       return;
     }
 
     // If there's no code we need to start the OAuth flow
     if (!code) {
+      console.log('🚀 [Auth] No code found, starting OAuth flow...');
       redirectToJobberOAuth();
       return;
     }
