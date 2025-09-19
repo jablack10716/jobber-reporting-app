@@ -8,6 +8,15 @@ const redirectToJobberOAuth = () => {
   const defaultRedirectUri = `${currentOrigin}/auth/callback`;
   const redirectUri = process.env.REACT_APP_REDIRECT_URL || defaultRedirectUri;
 
+  // Debug logging for production diagnosis
+  console.log('[OAuth Debug] Environment vars:', {
+    REACT_APP_REDIRECT_URL: process.env.REACT_APP_REDIRECT_URL,
+    NODE_ENV: process.env.NODE_ENV,
+    currentOrigin,
+    defaultRedirectUri,
+    finalRedirectUri: redirectUri
+  });
+
   try {
     const state = Math.random().toString(36).slice(2);
     sessionStorage.setItem('jobber_oauth_state', state);
@@ -20,7 +29,9 @@ const redirectToJobberOAuth = () => {
     authUrl.searchParams.set('redirect_uri', redirectUri);
     authUrl.searchParams.set('state', state);
 
-    // Optional debug to help diagnose redirect targets in production
+    // Enhanced debug to help diagnose redirect targets in production
+    console.log('[OAuth] Final authorization URL:', authUrl.toString());
+    console.log('[OAuth] Redirect URI being sent to Jobber:', redirectUri);
     try { console.debug('[OAuth] Redirecting to Jobber authorize', { redirectUri, base }); } catch {}
 
     window.location.href = authUrl.toString();
