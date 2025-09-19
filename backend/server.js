@@ -538,19 +538,6 @@ app.post('/api/admin/refresh-year', async (req, res) => {
 });
 
 
-// OAuth initiation endpoint (enables user to start OAuth flow for refresh token)
-app.get('/auth', (req, res) => {
-  try {
-    const jobberAPI = new JobberAPIService();
-    const state = Math.random().toString(36).substring(2, 15); // Generate random state
-    const authUrl = jobberAPI.generateAuthUrl(state);
-    res.redirect(authUrl);
-  } catch (error) {
-    console.error('[SERVER] Error generating OAuth URL:', error);
-    res.status(500).send('Failed to generate OAuth URL');
-  }
-});
-
 // Frontend handles /auth and /auth/callback; backend only exposes /api/* and helper endpoints
 
 // Token exchange endpoint
