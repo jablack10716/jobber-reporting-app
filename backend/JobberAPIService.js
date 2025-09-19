@@ -13,7 +13,7 @@ class JobberAPIService {
     this.apiUrl = process.env.JOBBER_API_URL;
     this.clientId = process.env.JOBBER_CLIENT_ID;
     this.clientSecret = process.env.JOBBER_CLIENT_SECRET;
-    this.redirectUri = process.env.JOBBER_REDIRECT_URI;
+    this.redirectUri = process.env.JOBBER_REDIRECT_URL;
     this.tokenStoragePath = process.env.TOKEN_STORAGE_PATH || './tokens.json';
     this.graphqlVersion = process.env.JOBBER_GRAPHQL_VERSION || '2025-01-20';
 

@@ -603,7 +603,7 @@ function validateEnvironment() {
     'JOBBER_CLIENT_ID',
     'JOBBER_CLIENT_SECRET',
     'JOBBER_API_URL',
-    'JOBBER_REDIRECT_URI',
+    'JOBBER_REDIRECT_URL',
     'SESSION_SECRET'
   ];
 
