@@ -12,7 +12,7 @@ const redirectToJobberOAuth = () => {
     const state = Math.random().toString(36).slice(2);
     sessionStorage.setItem('jobber_oauth_state', state);
 
-    const base = process.env.REACT_APP_JOBBER_API_URL || 'https://api.getjobber.com/api/oauth/authorize';
+    const base = process.env.REACT_APP_JOBBER_API_URL || 'https://api.getjobber.com/oauth/authorize';
     const authUrl = new URL(base);
     // Required per Jobber docs: response_type=code
     authUrl.searchParams.set('response_type', 'code');
@@ -28,7 +28,7 @@ const redirectToJobberOAuth = () => {
     // Fallback simple redirect if URL constructor fails for any reason
     const state = Math.random().toString(36).slice(2);
     sessionStorage.setItem('jobber_oauth_state', state);
-    const base = process.env.REACT_APP_JOBBER_API_URL || 'https://api.getjobber.com/api/oauth/authorize';
+    const base = process.env.REACT_APP_JOBBER_API_URL || 'https://api.getjobber.com/oauth/authorize';
     const clientId = process.env.REACT_APP_JOBBER_APP_CLIENT_ID || '';
     const fallbackRedirect = `${base}?response_type=code&client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&state=${encodeURIComponent(state)}`;
     window.location.href = fallbackRedirect;
