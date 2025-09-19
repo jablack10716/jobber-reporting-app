@@ -11,38 +11,49 @@ const redirectToJobberOAuth = () => {
   // Debug logging for production diagnosis
   console.log('[OAuth Debug] Environment vars:', {
     REACT_APP_REDIRECT_URL: process.env.REACT_APP_REDIRECT_URL,
+    REACT_APP_JOBBER_API_URL: process.env.REACT_APP_JOBBER_API_URL,
+    REACT_APP_JOBBER_APP_CLIENT_ID: process.env.REACT_APP_JOBBER_APP_CLIENT_ID,
     NODE_ENV: process.env.NODE_ENV,
     currentOrigin,
     defaultRedirectUri,
     finalRedirectUri: redirectUri
   });
 
-  try {
-    const state = Math.random().toString(36).slice(2);
-    sessionStorage.setItem('jobber_oauth_state', state);
+  // TEMPORARY: Add delay to see logs
+  console.log('⏱️ [OAuth] Delaying redirect for 5 seconds to view logs...');
+  setTimeout(() => {
+    console.log('🚀 [OAuth] Starting actual redirect now...');
+    performOAuthRedirect();
+  }, 5000);
 
-    const base = process.env.REACT_APP_JOBBER_API_URL || 'https://api.getjobber.com/oauth/authorize';
-    const authUrl = new URL(base);
-    // Required per Jobber docs: response_type=code
-    authUrl.searchParams.set('response_type', 'code');
-    authUrl.searchParams.set('client_id', process.env.REACT_APP_JOBBER_APP_CLIENT_ID || '');
-    authUrl.searchParams.set('redirect_uri', redirectUri);
-    authUrl.searchParams.set('state', state);
+  function performOAuthRedirect() {
+    try {
+      const state = Math.random().toString(36).slice(2);
+      sessionStorage.setItem('jobber_oauth_state', state);
 
-    // Enhanced debug to help diagnose redirect targets in production
-    console.log('[OAuth] Final authorization URL:', authUrl.toString());
-    console.log('[OAuth] Redirect URI being sent to Jobber:', redirectUri);
-    try { console.debug('[OAuth] Redirecting to Jobber authorize', { redirectUri, base }); } catch {}
+      const base = process.env.REACT_APP_JOBBER_API_URL || 'https://api.getjobber.com/oauth/authorize';
+      const authUrl = new URL(base);
+      // Required per Jobber docs: response_type=code
+      authUrl.searchParams.set('response_type', 'code');
+      authUrl.searchParams.set('client_id', process.env.REACT_APP_JOBBER_APP_CLIENT_ID || '');
+      authUrl.searchParams.set('redirect_uri', redirectUri);
+      authUrl.searchParams.set('state', state);
 
-    window.location.href = authUrl.toString();
-  } catch (err) {
-    // Fallback simple redirect if URL constructor fails for any reason
-    const state = Math.random().toString(36).slice(2);
-    sessionStorage.setItem('jobber_oauth_state', state);
-    const base = process.env.REACT_APP_JOBBER_API_URL || 'https://api.getjobber.com/oauth/authorize';
-    const clientId = process.env.REACT_APP_JOBBER_APP_CLIENT_ID || '';
-    const fallbackRedirect = `${base}?response_type=code&client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&state=${encodeURIComponent(state)}`;
-    window.location.href = fallbackRedirect;
+      // Enhanced debug to help diagnose redirect targets in production
+      console.log('[OAuth] Final authorization URL:', authUrl.toString());
+      console.log('[OAuth] Redirect URI being sent to Jobber:', redirectUri);
+      try { console.debug('[OAuth] Redirecting to Jobber authorize', { redirectUri, base }); } catch {}
+
+      window.location.href = authUrl.toString();
+    } catch (err) {
+      // Fallback simple redirect if URL constructor fails for any reason
+      const state = Math.random().toString(36).slice(2);
+      sessionStorage.setItem('jobber_oauth_state', state);
+      const base = process.env.REACT_APP_JOBBER_API_URL || 'https://api.getjobber.com/oauth/authorize';
+      const clientId = process.env.REACT_APP_JOBBER_APP_CLIENT_ID || '';
+      const fallbackRedirect = `${base}?response_type=code&client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&state=${encodeURIComponent(state)}`;
+      window.location.href = fallbackRedirect;
+    }
   }
 };
 
