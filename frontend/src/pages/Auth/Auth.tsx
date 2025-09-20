@@ -25,7 +25,8 @@ const Auth = () => {
     // If user is already authenticated, redirect to home immediately
     if (user.accountName) {
       console.log('✅ [Auth] User already authenticated, redirecting to home');
-      navigate('/home', { replace: true });
+      // Use absolute URL on current origin to avoid any host drift
+      window.location.replace(`${window.location.origin}/home`);
       return;
     }
 
@@ -74,9 +75,9 @@ const Auth = () => {
         // Update user context
         setUser(userData);
         
-        // Use hard redirect instead of React Router navigation to break any loops
-        console.log('🏠 Redirecting to home page...');
-        window.location.href = '/home';
+  // Use hard redirect with absolute URL on current origin
+  console.log('🏠 Redirecting to home page...');
+  window.location.replace(`${window.location.origin}/home`);
         
       } catch (err: any) {
         console.error('Authentication error', err);
