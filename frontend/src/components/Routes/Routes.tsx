@@ -41,15 +41,12 @@ const Routes = () => {
 const ProtectedRoutes = () => {
   const { user } = useUserContext();
   
-  // TEMPORARY: Skip auth check for testing
-  return <Outlet />;
-  
-  // Original auth check (commented out for testing)
-  /*
+  // Require authentication: if no accountName in user context, send to /auth
   if (!user.accountName) {
     return <Navigate to="/auth" />;
   }
-  */
+
+  return <Outlet />;
 };
 
 export default Routes;
