@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "cd ../frontend && npm install && npm run build && cd ../backend && cp -r ../frontend/build ./build",
+    "build": "cd ../frontend && set \"HUSKY=0\" && npm install && npm run build && cd ../backend && node scripts/copy-frontend-build.js",
     "purge:wes:aug2025": "node purge-rebuild-slices.js --plumber Wes --year 2025 --month 08 --regen --refresh",
     "reconcile:wes:aug2025": "node validate-wes-aug-2025.js --plumber Wes --year 2025 --month 08 --refresh",
     "purge:all:2025": "node purge-rebuild-slices.js --all --year 2025 --regen --refresh",

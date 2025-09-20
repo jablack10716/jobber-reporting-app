@@ -13,7 +13,8 @@ class JobberAPIService {
     this.apiUrl = process.env.JOBBER_API_URL;
     this.clientId = process.env.JOBBER_CLIENT_ID;
     this.clientSecret = process.env.JOBBER_CLIENT_SECRET;
-    this.redirectUri = process.env.JOBBER_REDIRECT_URL;
+    // Support legacy env var name and provide a safe default
+    this.redirectUri = process.env.JOBBER_REDIRECT_URL || process.env.JOBBER_REDIRECT_URI || 'http://localhost:3000/auth/callback';
     this.tokenStoragePath = process.env.TOKEN_STORAGE_PATH || './tokens.json';
     this.graphqlVersion = process.env.JOBBER_GRAPHQL_VERSION || '2025-01-20';
 
@@ -301,23 +302,35 @@ class JobberAPIService {
     }
   }
 
-  // Generate OAuth authorization URL
-  generateAuthUrl(state = null) {
-    const baseUrl = 'https://api.getjobber.com/api/oauth/authorize';
+  // Generate OAuth authorization URL (backend utility/testing)
+  // Accepts optional options: { redirectUri?: string, scopes?: string[] }
+  generateAuthUrl(state = null, options = {}) {
+    const baseUrl = process.env.JOBBER_OAUTH_AUTHORIZE_URL || 'https://api.getjobber.com/oauth/authorize';
+    const redirectUri = options.redirectUri || this.redirectUri;
+    const scopeList = Array.isArray(options.scopes) && options.scopes.length > 0
+      ? options.scopes
+      : [
+          'read_clients',
+          'read_jobs',
+          'read_invoices',
+          'read_jobber_payments',
+          'read_users',
+          'read_expenses',
+          'read_custom_field_configurations',
+          'read_time_sheets'
+        ];
+
     const params = new URLSearchParams({
       response_type: 'code',
       client_id: this.clientId,
-      redirect_uri: this.redirectUri,
-      scope: 'read', // Adjust scope as needed
+      redirect_uri: redirectUri,
+      scope: scopeList.join(' '),
     });
 
-    if (state) {
-      params.append('state', state);
-    }
+    if (state) params.append('state', state);
 
     const authUrl = `${baseUrl}?${params.toString()}`;
-    this.log('Generated auth URL:', authUrl);
-    
+    this.log('Generated auth URL:', { authUrl, redirectUri, scopes: scopeList.join(' ') });
     return authUrl;
   }
 }

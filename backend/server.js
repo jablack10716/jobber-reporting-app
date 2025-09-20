@@ -38,6 +38,8 @@ const {
 
 const app = express();
 const port = 3000;
+// Make Express respect X-Forwarded-* on Render so we compute correct origin
+app.set('trust proxy', true);
 
 // ----------------------------------------------------------------------------
 // Observability & Diagnostics Enhancements (Priority 1)
@@ -243,12 +245,18 @@ app.get('/api/health', (req, res) => {
 // OAuth URL generation endpoint
 app.get('/api/auth/oauth-url', (req, res) => {
   try {
+    const state = Math.random().toString(36).substring(2, 15);
+    const proto = String(req.headers['x-forwarded-proto'] || req.protocol).split(',')[0];
+    const host = req.headers['x-forwarded-host'] || req.get('host');
+    const origin = `${proto}://${host}`;
+    const redirectUri = `${origin}/auth/callback`;
+
     const jobberAPI = new JobberAPIService();
-    const state = Math.random().toString(36).substring(2, 15); // Generate random state
-    const authUrl = jobberAPI.generateAuthUrl(state);
+    const authUrl = jobberAPI.generateAuthUrl(state, { redirectUri });
     res.json({ 
-      authUrl, 
+      authUrl,
       state,
+      redirectUri,
       message: "Visit this URL to re-authenticate with Jobber",
       instructions: "After clicking the URL and authorizing, you'll be redirected back to complete the OAuth flow"
     });

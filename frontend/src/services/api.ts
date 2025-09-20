@@ -1,8 +1,14 @@
 import axios from "axios";
 import { User } from "types/user";
 
+// Choose a sensible default for production: current origin
+const envBase = process.env.REACT_APP_API_URL;
+const looksLocal = (u?: string) => !!u && /(localhost|127\.0\.0\.1)/i.test(u);
+const defaultBase = (typeof window !== 'undefined' && window.location?.origin) || 'http://localhost:3000';
+const baseURL = (!envBase || looksLocal(envBase)) ? defaultBase : envBase;
+
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL,
+  baseURL,
   withCredentials: true,
 });
 

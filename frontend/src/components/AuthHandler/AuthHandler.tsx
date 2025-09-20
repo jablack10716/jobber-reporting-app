@@ -13,13 +13,23 @@ const AuthHandler: React.FC = () => {
   useEffect(() => {
     const handleOAuthCallback = async () => {
       try {
+        console.log('[AuthHandler] Callback URL:', window.location.href);
         const urlParams = new URLSearchParams(location.search);
-        const code = urlParams.get('code');
-        const state = urlParams.get('state');
+        let code = urlParams.get('code');
+        let state = urlParams.get('state');
+        // Some providers could return values in the hash; check as a fallback
+        if (!code && window.location.hash) {
+          const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+          code = code || hashParams.get('code');
+          state = state || hashParams.get('state');
+        }
 
         if (!code) {
+          // Surface OAuth error and description if present
+          const err = urlParams.get('error') || new URLSearchParams(window.location.hash.replace(/^#/, '')).get('error');
+          const errDesc = urlParams.get('error_description') || new URLSearchParams(window.location.hash.replace(/^#/, '')).get('error_description');
           setStatus('error');
-          setErrorMessage('No authorization code received from Jobber');
+          setErrorMessage(err ? `OAuth error: ${err}${errDesc ? ` - ${decodeURIComponent(errDesc)}` : ''}` : 'No authorization code received from Jobber');
           return;
         }
 
@@ -31,7 +41,7 @@ const AuthHandler: React.FC = () => {
           return;
         }
 
-        console.log('Processing OAuth callback with code:', code.substring(0, 10) + '...');
+  console.log('Processing OAuth callback with code:', code.substring(0, 10) + '...');
         console.log('API URL:', process.env.REACT_APP_API_URL);
         
         // Exchange code for token and user data

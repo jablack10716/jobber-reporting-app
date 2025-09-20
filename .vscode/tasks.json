@@ -9,6 +9,30 @@
 			"isBackground": true,
 			"problemMatcher": [],
 			"group": "build"
+		},
+		{
+			"label": "Build Frontend and Copy to Backend",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend'; npm run build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$eslint-stylish"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build Frontend and Copy to Backend",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend'; npm run build",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build Frontend and Copy to Backend",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\jabla\\OneDrive\\Documents\\Advanced\\Python\\jobber-reporting-app\\backend'; npm run build",
+			"isBackground": false,
+			"group": "build"
 		}
 	]
 }

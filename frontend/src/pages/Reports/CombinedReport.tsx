@@ -63,7 +63,10 @@ const CombinedReport: React.FC = () => {
     const noticesLocal: string[] = [];
     try {
       // Use combined endpoint to leverage aggregate meta.anyMock
-      const resp = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:3000'}/api/reports/combined`);
+      const apiBase = (process.env.REACT_APP_API_URL && !/(localhost|127\.0\.0\.1)/i.test(process.env.REACT_APP_API_URL))
+        ? process.env.REACT_APP_API_URL
+        : (typeof window !== 'undefined' && window.location?.origin) || 'http://localhost:3000';
+      const resp = await fetch(`${apiBase}/api/reports/combined`);
       if (!resp.ok) throw new Error(`Failed to fetch combined: ${resp.status}`);
       const combined = await resp.json();
       setDataModeMeta(combined.meta || null);
